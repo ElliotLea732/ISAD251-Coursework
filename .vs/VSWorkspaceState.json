@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CafeWebApp",
+    "\\CafeWebApp\\Controllers",
+    "\\CafeWebApp\\Models",
+    "\\CafeWebApp\\Views",
+    "\\CafeWebApp\\Views\\DrinksMenu",
+    "\\CafeWebApp\\wwwroot",
+    "\\CafeWebApp\\wwwroot\\img",
+    "\\docs"
   ],
+  "SelectedNode": "\\CafeWebApp.sln",
   "PreviewInSolutionExplorer": false
 }
