@@ -1,0 +1,38 @@
+﻿@model CafeWebApp.Models.Stock
+
+
+<style>
+    body, html {
+        height: 100%;
+        font-family: Impact, Charcoal, sans-serif;
+    }
+
+    .top-buffer {
+        margin-top: 80px;
+    }
+</style>
+
+<h1>
+    Menu
+</h1>
+
+<div class="top-buffer">
+<div class="row">
+    <div class="column">
+      Select item
+    </div>
+</div>
+<div class="row">
+   <form asp-controller="Basket" method="post">
+    <div class="column" style="position:relative;top:35px;">
+        <select class="form-control" name="Item" asp-for="ItemName"
+             asp-items="(IEnumerable<SelectListItem>)ViewBag.Stock">
+            <option value="">Select Item</option>
+        </select>
+    </div>
+    <div class="column" style="position:relative; left:300px;">
+        <input type="submit" value="Add to basket"/>
+    </div>
+    </form>
+</div>
+</div>
