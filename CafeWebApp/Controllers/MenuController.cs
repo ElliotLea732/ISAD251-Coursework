@@ -14,7 +14,6 @@ namespace CafeWebApp.Controllers
     {
         private readonly ISAD251_ELeaContext _context;
 
-        IEnumerable<SelectListItem> PriceList;
 
         public MenuController(ISAD251_ELeaContext context)
         {
@@ -22,23 +21,14 @@ namespace CafeWebApp.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<SelectListItem> DrinksList = (from p in _context.Stock.AsEnumerable()
+            IEnumerable<SelectListItem> ItemList = (from p in _context.Stock.AsEnumerable() //creates a list of the items for sale for use in the drop down box
                                                       select new SelectListItem
                                                       (
                                                           text: p.ItemName,
                                                           value: p.ItemId.ToString()
                                                       )).ToList();
 
-            ViewBag.Stock = DrinksList;
-
-           PriceList = (from p in _context.Stock.AsEnumerable()
-                        select new SelectListItem
-                        (
-                        text: p.ItemId.ToString(),
-                        value: p.ItemPrice.ToString()
-                        )).ToList();
-
-            ViewBag.PriceList = PriceList;
+            ViewBag.Stock = ItemList;
 
             return View();
         }

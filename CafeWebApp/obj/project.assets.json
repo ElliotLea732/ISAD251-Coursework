@@ -8656,6 +8656,7 @@
     ".NETCoreApp,Version=v3.1": [
       "EntityFramework >= 6.4.0",
       "Microsoft.EntityFrameworkCore >= 3.1.0",
+      "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
       "Microsoft.Extensions.Logging.Debug >= 3.1.0",
@@ -8663,8 +8664,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ellio\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ellio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8675,9 +8675,6 @@
       "packagesPath": "C:\\Users\\ellio\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ellio\\Source\\Repos\\ISAD251-Coursework\\CafeWebApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\ellio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -8708,6 +8705,12 @@
             "version": "[6.4.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.0, )"
           },

@@ -12,20 +12,16 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#nullable restore
 #line 1 "C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\Views\_ViewImports.cshtml"
 using CafeWebApp;
 
 #line default
 #line hidden
-#nullable disable
-#nullable restore
 #line 2 "C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\Views\_ViewImports.cshtml"
 using CafeWebApp.Models;
 
 #line default
 #line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88df9beda5a8654a681e1cf76d7465dacf73f7bc", @"/Views/Home/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"86c6f4c7c4112162f9a6e6c1bef0914d9179d558", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
@@ -57,14 +53,12 @@ using CafeWebApp.Models;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-#nullable restore
 #line 1 "C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\Views\Home\Index.cshtml"
   
     ViewData["Title"] = "Home Page";
 
 #line default
 #line hidden
-#nullable disable
             WriteLiteral(@"
 
 <style>
@@ -102,7 +96,7 @@ using CafeWebApp.Models;
         </div>
         <div class=""column"" style=""posi");
             WriteLiteral("tion:relative; left:300px; top:2px;\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88df9beda5a8654a681e1cf76d7465dacf73f7bc5357", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88df9beda5a8654a681e1cf76d7465dacf73f7bc5243", async() => {
                 WriteLiteral("\r\n            <img src=\"../img/HomePageSandwich.jpg\" width=\"260\" height=\"212\" />\r\n            ");
             }
             );

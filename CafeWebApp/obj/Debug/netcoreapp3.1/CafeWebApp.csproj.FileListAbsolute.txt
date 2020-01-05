@@ -251,5 +251,5 @@ C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\bin\Debug\netcoreapp3.
 C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\obj\Debug\netcoreapp3.1\CafeWebApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Menu\Index.cshtml.g.cs
+C:\Users\ellio\Source\Repos\ISAD251-Coursework\CafeWebApp\obj\Debug\netcoreapp3.1\CafeWebApp.MvcApplicationPartsAssemblyInfo.cache
