@@ -5,11 +5,10 @@
     "\\CafeWebApp\\Controllers",
     "\\CafeWebApp\\Models",
     "\\CafeWebApp\\Views",
-    "\\CafeWebApp\\Views\\DrinksMenu",
+    "\\CafeWebApp\\Views\\Home",
     "\\CafeWebApp\\wwwroot",
-    "\\CafeWebApp\\wwwroot\\img",
-    "\\docs"
+    "\\CafeWebApp\\wwwroot\\img"
   ],
-  "SelectedNode": "\\CafeWebApp.sln",
+  "SelectedNode": "\\CafeWebApp\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

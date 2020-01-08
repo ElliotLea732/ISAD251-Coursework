@@ -17,22 +17,22 @@
 </h1>
 
 <div class="top-buffer">
-<div class="row">
-    <div class="column">
-      Select item
-    </div>
-</div>
-<div class="row">
-   <form asp-controller="Basket" method="post">
-    <div class="column" style="position:relative;top:35px;">
-        <select class="form-control" name="Item" asp-for="ItemName"
-             asp-items="(IEnumerable<SelectListItem>)ViewBag.Stock">
-            <option value="">Select Item</option>
-        </select>
-    </div>
-    <div class="column" style="position:relative; left:300px;">
-        <input type="submit" value="Add to basket"/>
-    </div>
+    <form asp-controller="Menu" asp-action="AddItemToOrder" method="post">
+            <div class="row">
+                <div class="column">
+                    Select item
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" style="position:relative;top:35px;">
+                    <select class="form-control" name="ItemName" asp-for="ItemName"
+                            asp-items="(IEnumerable<SelectListItem>)ViewBag.Stock">
+                        <option value="">Select Item</option>
+                    </select>
+                </div>
+                <div class="column" style="position:relative; left:300px;">
+                    <input type="submit" value="Order Item" />
+                </div>
+            </div>
     </form>
-</div>
 </div>
