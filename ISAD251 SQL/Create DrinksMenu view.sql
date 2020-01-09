@@ -1,0 +1,9 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[DrinksMenu] AS
+SELECT ItemName, ItemPrice
+FROM Stock
+WHERE ItemType = 'Drink';
+GO

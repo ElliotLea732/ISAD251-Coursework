@@ -1,0 +1,25 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ItemOrder](
+	[ItemOrderID] [int] NOT NULL,
+	[OrderMainID] [int] NOT NULL,
+	[ItemID] [int] NULL,
+	[Quantity] [int] NULL,
+ CONSTRAINT [ItemOrder_pk] PRIMARY KEY CLUSTERED 
+(
+	[ItemOrderID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[ItemOrder]  WITH CHECK ADD  CONSTRAINT [Orders_fk] FOREIGN KEY([OrderMainID])
+REFERENCES [dbo].[Orders] ([OrderMainID])
+GO
+ALTER TABLE [dbo].[ItemOrder] CHECK CONSTRAINT [Orders_fk]
+GO
+ALTER TABLE [dbo].[ItemOrder]  WITH CHECK ADD  CONSTRAINT [Stock_fk] FOREIGN KEY([ItemID])
+REFERENCES [dbo].[Stock] ([ItemID])
+GO
+ALTER TABLE [dbo].[ItemOrder] CHECK CONSTRAINT [Stock_fk]
+GO
